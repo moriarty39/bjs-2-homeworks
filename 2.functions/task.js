@@ -22,25 +22,30 @@
 }
 
 
-// Задание 2
 function worker(arr) {
-  let sum;
+  let sum = 0;
 
-  // Ваш код
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
 
   return sum;
 }
 
 function makeWork(arrOfArr, func) {
-  let max
-
-  // Ваш кода
-  // for ...
   
+  let max = func(arrOfArr[0]);
+    
+  for (i = 0; i < arrOfArr.length; i++) {
+    sum = func(arrOfArr[i]);       
+    if (sum > max) {
+    max = sum;
+    }
+  }
+
   return max
 }
 
-// Задание 3
-function worker2(arr) {
-  // Ваш код
-}
+
+
+
