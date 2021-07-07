@@ -20,11 +20,11 @@ Student.prototype.addMarks = function (...marks) {
   if(this.marks === undefined){ 
     this.marks = [];
     for (i=0; i < marks.length; i++) {
-      this.marks.push(mark); 
+      this.marks.push(marks); 
     }
    } else {
       for (i=0; i < marks.length; i++) {
-        this.marks.push(mark); 
+        this.marks.push(marks); 
     }
   }
 }
